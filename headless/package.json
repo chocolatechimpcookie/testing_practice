@@ -1,0 +1,15 @@
+{
+    "name":"headless-tester",
+    "description" : "",
+    "scripts":
+    {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node testserver.js"
+    },
+    "dependencies":
+    {
+        "lighthouse":"1.6.5",
+        "chrome-remote-interface":"0.22.0"
+    }
+    
+}

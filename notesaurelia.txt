@@ -1,0 +1,45 @@
+Protractor
+-testing tool for angular
+
+Aurelia's tutorial
+http://aurelia.io/hub.html#/doc/article/aurelia/testing/latest/end-to-end-testing/1
+
+
+E2E = Integration tests
+
+Promises
+
+
+Using jasmine library for this
+
+http://www.protractortest.org/#/
+
+
+
+
+First test
+	http://www.protractortest.org/#/
+
+Protractor Tutorial
+	http://www.protractortest.org/#/tutorial
+
+
+when running protractor, call
+
+	webdriver-manager start
+
+and let it run
+
+
+
+More notes:
+
+http://www.protractortest.org/#/toc
+
+http://www.protractortest.org/#/api?view=ElementArrayFinder
+
+
+
+
+Page objects:
+http://www.protractortest.org/#/page-objects
