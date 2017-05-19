@@ -43,3 +43,20 @@ http://www.protractortest.org/#/api?view=ElementArrayFinder
 
 Page objects:
 http://www.protractortest.org/#/page-objects
+
+
+
+
+isVerbose makes failures more verbose but not the general tests
+How could I get it to print 'it' and 'expect'?
+
+
+
+binding and model work with AngularJS but obviously not aurelia
+
+
+beforeEach?
+"Test files may also have beforeEach and afterEach blocks, which will be run
+before or after each it block regardless of whether the block passes or fails."
+
+Not sure how this is useful in that example

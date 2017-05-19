@@ -136,41 +136,41 @@
 
 
 
-// describe('Protractor Demo App', function()
-// {
-//     var firstNumber = element(by.model('first'));
-//     var secondNumber = element(by.model('second'));
-//     var goButton = element(by.id('gobutton'));
-//     var latestResult = element(by.binding('latest'));
-//     var history = element.all(by.repeater('result in memory'));
-//     //what this do?
-//     // console.log("History ");
-//     // console.log(history);
-//
-//
-//     function add(a, b)
-//     {
-//       firstNumber.sendKeys(a);
-//       secondNumber.sendKeys(b);
-//       goButton.click();
-//     }
-//
-//     beforeEach(function ()
-//     {
-//       browser.get('http://juliemr.github.io/protractor-demo/');
-//     });
-//
-//     it('should have a history', function()
-//     {
-//       add(1,2);
-//       add(3,4);
-//
-//       expect(history.last().getText()).toContain('1 + 2');
-//       expect(history.first().getText()).toContain('3 + 4');
-//       // expect(history.first().getText()).toContain('foo'); //wrong!
-//     });
-//
-// });
+describe('Protractor Demo App', function()
+{
+    var firstNumber = element(by.model('first'));
+    var secondNumber = element(by.model('second'));
+    var goButton = element(by.id('gobutton'));
+    var latestResult = element(by.binding('latest'));
+    var history = element.all(by.repeater('result in memory'));
+    //what this do?
+    // console.log("History ");
+    // console.log(history);
+
+
+    function add(a, b)
+    {
+      firstNumber.sendKeys(a);
+      secondNumber.sendKeys(b);
+      goButton.click();
+    }
+
+    beforeEach(function ()
+    {
+      browser.get('http://juliemr.github.io/protractor-demo/');
+    });
+
+    it('should have a history', function()
+    {
+      add(1,2);
+      add(3,4);
+
+      expect(history.last().getText()).toContain('1 + 2');
+      expect(history.first().getText()).toContain('3 + 4');
+      // expect(history.first().getText()).toContain('foo'); //wrong!
+    });
+
+});
 
 
 
@@ -215,38 +215,91 @@
 
 
 
-var AngularHomepage = function()
+// var AngularHomepage = function()
+// {
+//   var nameInput = element(by.model('yourName'));
+//   var greeting = element(by.binding('yourName'));
+//
+//   this.get = function()
+//   {
+//     browser.get('http://www.angularjs.org');
+//   };
+//
+//   this.setName = function(name)
+//   {
+//     nameInput.sendKeys(name);
+//   };
+//
+//   this.getGreeting = function()
+//   {
+//     return greeting.getText();
+//   };
+// };
+//
+//
+// describe('angularjs homepage', function()
+// {
+//   it('should greet the named user', function()
+//   {
+//
+//     var angularHomepage = new AngularHomepage();
+//     angularHomepage.get();
+//
+//     angularHomepage.setName('Julie');
+//
+//     expect(angularHomepage.getGreeting()).toEqual('Hello Julie!');
+//   });
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// weird function thing
+// original script
+
+// describe('angularjs homepage', function()
+// {
+//   it('should greet the named user', function()
+//   {
+//       browser.get('http://www.angularjs.org');
+//       element(by.model('yourName')).sendKeys('Julie');
+//       var greeting = element(by.binding('yourName'));
+//       expect(greeting.getText()).toEqual('Hello Julie!');
+//   });
+//
+// });
+
+
+
+
+
+// original script with =>
+
+describe('angularjs homepage', () =>
 {
-  var nameInput = element(by.model('yourName'));
-  var greeting = element(by.binding('yourName'));
-
-  this.get = function()
+  it('should greet the named user', () =>
   {
-    browser.get('http://www.angularjs.org');
-  };
-
-  this.setName = function(name)
-  {
-    nameInput.sendKeys(name);
-  };
-
-  this.getGreeting = function()
-  {
-    return greeting.getText();
-  };
-};
-
-
-describe('angularjs homepage', function()
-{
-  it('should greet the named user', function()
-  {
-
-    var angularHomepage = new AngularHomepage();
-    angularHomepage.get();
-
-    angularHomepage.setName('Julie');
-
-    expect(angularHomepage.getGreeting()).toEqual('Hello Julie!');
+      browser.get('http://www.angularjs.org');
+      element(by.model('yourName')).sendKeys('Julie');
+      var greeting = element(by.binding('yourName'));
+      expect(greeting.getText()).toEqual('Hello Julie!');
   });
+
 });

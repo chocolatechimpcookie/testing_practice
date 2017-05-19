@@ -29,3 +29,14 @@ What does......
     loadEventFired(()
 
           What's with the weird brackets
+
+
+
+BDD = Behavior driven development
+
+If you're using get, why use seleniumAddress?
+Is there a nodejs address?
+directConnect?
+  browser.loadAndWaitForAureliaPage
+
+Which is appropriate for what scenario?
