@@ -1,7 +1,11 @@
 es6 (ESCMASCRIPT 6) = es2015
 
 
-left off:
+**getting this weird error after adding class:
+  Uncaught TypeError: monthlyPayment.toFixed is not a function
+    at HTMLButtonElement.<anonymous>
+
+
 
 Tutorial
 http://ccoenraets.github.io/es6-tutorial/
@@ -11,6 +15,142 @@ Babel = JavaScript compiler
 Tutorial uses http-server as a local web server
 
 
+const and let   https://www.sitepoint.com/joys-block-scoping-es6/
 
 let
   unlike var variables which are function scoped, let variables are block scoped
+
+  Does let work with child blocks as well? It looks like it.
+
+  C and Java, blocks have a scope, var in JS is scoped to nearest parent function
+
+  you can't declare the variable twice in the same scope
+
+const
+  also has a block scope
+
+  you can't declare the variable twice in the same scope
+
+  usually const are in caps
+  won't need to be reassigned
+
+  **it's not immutable, it can't be updated, but it can be changed?
+  I guess if it s an object, it can be changed, but not a normal variable
+
+  Also must be immediately initialized
+
+  But it can be changed, which is weird.
+
+  You can use object.freeze to make properties immutable
+
+  *if its not immutable why use it?
+
+
+=>
+  Doesn't have its own this
+
+  you can send it variables too
+
+  You can put it in objects too and run functions immediately
+    amortization.forEach(month => console.log(month));
+
+for each
+  for each item do X
+  array.forEach(function(currentValue, index, arr), thisValue)
+
+
+
+
+
+Es6 adds native support for modules
+
+  Things installed
+    babel-loader
+    web-pack
+
+
+  What does --save-dev do as an npm argument?
+  --save-dev is used to save the package for development purpose. Example: unit tests, minification..
+  --save is used to save the package required for the application to run.
+
+
+  what does web-pack do?
+    Webpack uses Babel behind the scenes to compile your application. You can
+    build an application using Webpack even if that application is not using ECMAScript
+     6 modules. In other words, the babel script in package.json is not needed anymore.
+
+     use npm run webpack
+
+  What advantage does webpack have, just cause its native
+
+  old babel script in package.json:
+  "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
+
+
+export
+  lets you import variables and functions from other files
+
+
+class
+  So class isn't class inheritance but still prototypal?
+  Weird
+
+  "ECMAScript 6 introduces the concept of class available in traditional object-
+  oriented languages. In ECMAScript 6, the class syntax is syntactical sugar on
+   top of the existing prototype-based inheritance model. It does not add a new
+  object-oriented inheritance model to JavaScript.""
+
+  **what does get do?
+
+  **why don't these functions need function parenthesis:
+        document.getElementById("monthlyPayment").innerHTML = mortgage.monthlyPayment.toFixed(2);
+
+  capitalize first letter for class for easy recognition
+
+  has its own built in syntax for getters and setters
+    get()
+    set()
+
+  Looks like you can use `` as an alternative quotation mark
+
+  mortgage.amortization.forEach((year, index) =>
+    html +=
+      `
+        <tr>
+          <td>${index + 1}</td>
+          <td class="currency">${Math.round(year.principalY)}</td>
+          <td class="stretch">
+            <div class="flex">
+              <div class="bar principal"
+                style="flex:${year.principalY}; -webkit-flex:${year.principalY}">
+              </div>
+              <div class="bar interest"
+                style="flex:${year.interestY}; -webkit-flex:${year.interestY}">
+              </div>
+            </div>
+          </td>
+          <td class="currency left">${Math.round(year.interestY)}</td>
+          <td class="currency">${Math.round(year.balance)}</td>
+        </tr>
+      `
+
+      // ^whats going in this, the $, there's no framework, is his an es6 thing, letting
+      // you throw variables inside html inside js?
+      //do I need ` ` to do that
+      document.getElementById("amortization")
+      called grave accent
+
+      grave accents denote template strings and let you put those variables inside your html inside your js
+      https://stackoverflow.com/questions/33679732/difference-if-there-is-any-between-and-in-javascript
+      They don't work with all JS compilers but they do with work with babel
+
+
+      this is interesting, compares es5 and es6 objects: https://coryrylan.com/blog/javascript-es6-class-syntax
+
+
+Promises
+  You can use promises with fetch()
+    Basically alternative XMLHttpRequest
+    is this es6?
+
+  Not sure whats going in ratefinder.js syntatically

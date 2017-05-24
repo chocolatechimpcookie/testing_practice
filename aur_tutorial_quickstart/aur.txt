@@ -1,0 +1,66 @@
+Some of this cool benefits include:
+
+  Coding in vanilla JS
+  Support for TypeScrit, ES2016 and ES2015 (I am not kidding)
+  Simple and intuitive all-way data binding
+  Awesome routing with less to no drama
+  Frictionless Setup
+  Testing as a habit
+  Complies with most of W3C standards
+
+Starting server
+
+  http-server -o -c-1
+
+
+What is esnext?
+    -Says es2016 in keywords but mentions esnext in the rest of it
+    https://benmccormick.org/2015/09/14/es5-es6-es2016-es-next-whats-going-on-with-javascript-versioning/
+
+    ES6 = ES2015
+    ES7 = ES2016
+
+    ESNEXT means newer ECMA
+
+
+First tutorial
+    http://aurelia.io/hub.html#/doc/article/aurelia/framework/latest/quick-start/1
+
+
+    This is in ES 2016, ES7
+
+    //**it pushes whatever is in todoDescription
+        // but how is it getting the description from todo if there's
+        // no passing to the constructor
+
+    Root component by default is app.js
+
+
+    To create a view for any class, simply create an HTML file with the same name as
+    the ES 2016 module but change the file extension to .html.
+
+
+    Aurelia will use two-way binding for all form control value bindings and one
+    -way binding for everything else. However, you can always override this by
+    using an explicit binding command. For example, instead of using .bind you
+    can use .one-way, .two-way or .one-time. Similarly, you can use .delegate for
+     event delegation in place of .trigger.
+
+**ES7 (ES2016) vs ES6 (ES2015)??
+  ES6
+    for of loops
+      http://exploringjs.com/es6/ch_for-of.html
+      https://www.eventbrite.com/engineering/learning-es6-for-of-loop/
+
+      The new for-of loop introduced with ES6 allows for iterating over an
+      array (or any iterable) in a succinct fashion similar to how we can iterate over the keys of an object using for-in.
+
+        let list = [8, 3, 11, 9, 6];
+
+        for (let value of list) {
+        console.log(value);
+        }
+
+
+
+**Everywhere it seems to drop the .js, in html and js files

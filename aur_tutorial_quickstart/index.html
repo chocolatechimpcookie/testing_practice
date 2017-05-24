@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aurelia</title>
+  </head>
+  <body aurelia-app="src/main">
+    <script src="scripts/system.js"></script>
+      <!-- "a modern javascript module loader" -->
+    <script src="scripts/config-esnext.js"></script>
+    <script src="scripts/aurelia-core.min.js"></script>
+    <script>
+      // System.import('aurelia-bootstrapper');
+      // ^this was in there but the guide says :
+      SystemJS.import('aurelia-bootstrapper');
+    </script>
+  </body>
+</html>
