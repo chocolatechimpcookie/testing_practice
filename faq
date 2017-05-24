@@ -6,7 +6,11 @@ What does......
 
     General node
 
+    es6
 
+    properties of objects, using functions with Objects
+
+    function objects, can I access the variables directly?
 
     promises
 
@@ -14,7 +18,10 @@ What does......
 
 
     then(()
+      useful: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then
 
+
+    element
 
 
     const
@@ -30,7 +37,9 @@ What does......
 
           What's with the weird brackets
 
+    look back over functions in general
 
+    look over objects in general
 
 BDD = Behavior driven development
 
@@ -40,3 +49,43 @@ directConnect?
   browser.loadAndWaitForAureliaPage
 
 Which is appropriate for what scenario?
+
+
+How to update NPM itself?
+npm install -g npm
+
+
+
+
+It says to download the Skeleton Navigation App and run
+gulp watch
+gulp e2e
+
+
+
+
+
+Does sendKeys use focus?
+  Yes
+
+How do I test protractor without running a test?
+
+
+
+Using regular objects or functions?
+
+How do I access the functions variables? Just getters and setters?
+
+
+Objects are just a list of keys. Can I use
+
+
+Creating a class would make it easier, because it would mean the variables
+can be accessed directly.
+
+
+
+
+// How do I store the values in these promises without breaking the flow of
+// the script? I will likely need to do this multiple times
+//maybe just use the syntax of expect. Need to know more about promises and then.

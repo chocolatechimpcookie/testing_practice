@@ -1,0 +1,16 @@
+es6 (ESCMASCRIPT 6) = es2015
+
+
+left off:
+
+Tutorial
+http://ccoenraets.github.io/es6-tutorial/
+
+Babel = JavaScript compiler
+
+Tutorial uses http-server as a local web server
+
+
+
+let
+  unlike var variables which are function scoped, let variables are block scoped

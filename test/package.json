@@ -1,0 +1,12 @@
+{
+	"name":"tester",
+	"version" : "1.0.0",
+	"description": "",
+	"dependencies":
+	{
+		"aurelia-tools": "^1.0.0",
+    		"aurelia-protractor-plugin": "^1.0.0",
+    		"protractor": "^4.0.10"
+	} 
+
+}

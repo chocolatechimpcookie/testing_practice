@@ -1,3 +1,12 @@
+Atom shortcuts
+	Ctrl \ for side pane with path
+	ctrl shift p for shortcut list
+
+	escape to escape ctrl f
+
+
+
+
 Protractor
 -testing tool for angular
 
@@ -28,7 +37,8 @@ when running protractor, call
 
 	webdriver-manager start
 
-and let it run
+To run a specific script
+	protractor conf.js
 
 
 
@@ -60,3 +70,16 @@ beforeEach?
 before or after each it block regardless of whether the block passes or fails."
 
 Not sure how this is useful in that example
+
+
+
+
+bower?
+
+global vs local npm installs
+
+
+
+
+
+on Aurelia article, stopped at "Testing the Aurelia Skeleton Navigation App"
