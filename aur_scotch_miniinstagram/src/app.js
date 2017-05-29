@@ -1,22 +1,38 @@
-export class App
-{
-  constructor()
-  {
-    this.message = 'Welcome to Aurelia';
-    this.firstNum = 0;
-    this.secondNum = 0;
+export class App {
+  // Implement configureRouter method
+  configureRouter(config, router) {
+    config.title = 'Scotch IG';
+    // Use map to set array of possible routes
+    config.map([
+      { route: ['','home'], name: 'home', moduleId: './home', nav: true, title:'Home' },
+      { route: 'me', name: 'me',  moduleId: './me',    nav: true, title:'Me' }
+    ]);
+
+    // Create a binding to the router object
+    this.router = router;
   }
 
+  //config configure the router
+  //router is object of information about routes
 
-
-  get sum ()
-  {
-    return parseInt(this.firstNum) + parseInt(this.secondNum);
-  }
-
-  submit ()
-  {
-    alert(`Sum of ${this.firstNum} and ${this.secondNum} is ${this.sum}`);
-
-  }
+    //original test
+  // constructor()
+  // {
+  //   this.message = 'Welcome to Aurelia';
+  //   this.firstNum = 0;
+  //   this.secondNum = 0;
+  // }
+  //
+  //
+  //
+  // get sum ()
+  // {
+  //   return parseInt(this.firstNum) + parseInt(this.secondNum);
+  // }
+  //
+  // submit ()
+  // {
+  //   alert(`Sum of ${this.firstNum} and ${this.secondNum} is ${this.sum}`);
+  //
+  // }
 }

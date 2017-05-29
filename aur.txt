@@ -1,4 +1,8 @@
 **Everywhere it seems to drop the .js, in html and js files
+**So does aurelia automatically compile ES6 behind the scenes?
+**       System.import('aurelia-bootstrapper');
+or
+      SystemJS.import('aurelia-bootstrapper');
 
 
 
@@ -67,9 +71,22 @@ First tutorial
 
 
 Second tutorial scotch
+  This tutorial does not help you set this stuff up and is pretty confusing
 
   app.js is an entry point for aurelia
 
   why does this create constructor properties without constructor
   and without even calling them as variables, just making them global
   its weird
+
+  installed
+    jspm
+
+
+third tutorial
+  http://www.programwitherik.com/hello-world-tutorial-aurelia-2016/
+
+  creates everything from scratch
+
+  **This doesn't instatiate variables in the app.js class either
+  Why?

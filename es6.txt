@@ -154,3 +154,22 @@ Promises
     is this es6?
 
   Not sure whats going in ratefinder.js syntatically
+
+
+
+Why use get or set function syntax instead of general function syntax?
+  the problem with this syntax is that you're not calling it by get anyway
+  so its less clear whether its a get function
+
+
+
+So class functions don't have their own this it seems, and accessing the classes
+constructor variables requires this.
+
+==========================Questions=======================================
+
+1) Is => Es6 syntax? If yes, then, does nodejs run it without transpiling it?
+  http://node.green/
+  Looks like it does
+
+  Doesn't protractor run node? so why even use babel?

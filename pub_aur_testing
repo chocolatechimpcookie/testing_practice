@@ -1,0 +1,67 @@
+Tutorial:
+  http://blog.aurelia.io/2015/02/16/end-to-end-testing-with-aurelia-and-protractor/
+
+
+I could use:
+
+* **skeleton-esnext-webpack** - This project is configured to use the Babel
+ transpiler so that you can write your application using either language. It
+ should work well with any standard text editor. This skeleton uses NPM for
+ package management and Webpack for bundling.
+
+
+ **skeleton-esnext** - This project is configured to use the Babel transpiler
+ so that you can write your application with ESNext code. It should work well
+ with any standard text editor. This skeleton uses JSPM for package management
+and SystemJS for loading and bundling.
+
+
+I've had better luck with babel and npm.
+
+  Ignore gulp instructions and go into the readme.
+
+  src has an aurelia app running
+
+  npm start
+    starts the app
+    http://localhost:9000
+  npm test
+    unit tests
+    more descriptive output
+    Not sure where to hook in web address
+    Looks like its using the actual app as part of the testing.
+
+
+
+  npm e2e
+    end to end tests, protractor im assuming
+    I understand the files
+    This is more of what we're looking for
+    currently local, but one variable will change it all
+    This is how the user will interact
+
+    How do I change this to run MY scripts?
+
+    It is automatically transpiling these files from es6
+
+
+
+    It works with aurelia value binding. It also works with regular protractor.
+
+    **What about firefox? I included it in my own conf file, but it ignores it.
+    It probably is ignoring my conf file and has its own.
+
+
+      Looks like its using Karma to launch stuff
+        https://www.npmjs.com/package/karma-firefox-launcher
+
+    **Its also automatically running the src server locally, which I don't need it
+    to do.
+
+
+    **Should I put ALL variables in the constructor?
+      It would make it easier to set all the variables when making a new object
+
+      1) How do I disable the local server setting up?
+      2) How do I set up Firefox with this?
+      3) How do I get the program to be less verbose?
