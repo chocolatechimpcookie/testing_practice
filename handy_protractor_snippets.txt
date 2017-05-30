@@ -1,3 +1,8 @@
+https://github.com/sakshisingla/Protractor-Non-Angular-Tests/wiki/Creating-test-scripts-using-Protractor-for-non-angular-application
+http://ricostacruz.com/cheatsheets/jasmine.html
+http://luxiyalu.com/protractor-locators-selectors/
+
+
 Useful Protractor functions:
 	browser.driver.sleep(2000);
 
@@ -11,7 +16,6 @@ Elementfinder is a promise therefore it is useful to use then after getAttribute
 
 Handy shortcuts to select DOM elements:
 
-	http://luxiyalu.com/protractor-locators-selectors/
 
 
 	The $ is not a jQuery selector, but a shorthanded version of element
@@ -34,3 +38,7 @@ Handy shortcuts to select DOM elements:
 	element(by.partialButtonText('Save'));  // part of button text
 	element(by.cssContainingText('.pet', 'Dog')) // for selecting this: <li class="pet">Dog</li>
 	element(by.deepCss('span'))             // for selecting all level of spans <span><span>x</span></span>
+
+
+
+http://ricostacruz.com/cheatsheets/jasmine.html

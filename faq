@@ -41,7 +41,7 @@ What does......
       -IIFE (Immediately Invoked Function Expression)
       .forEach syntax
 
-      
+
     look over objects in general
 
 BDD = Behavior driven development
@@ -59,11 +59,9 @@ npm install -g npm
 
 
 
-
-It says to download the Skeleton Navigation App and run
-gulp watch
-gulp e2e
-
+Can I access a classes variables directly?
+  -Not the ones in the constructor
+  -Not the ones outside it
 
 
 
@@ -87,7 +85,9 @@ Creating a class would make it easier, because it would mean the variables
 can be accessed directly.
 
 
+How can I queryselect in protractor in order to set element properties directly?
 
+How can I check if something is empty in protractor?
 
 // How do I store the values in these promises without breaking the flow of
 // the script? I will likely need to do this multiple times
