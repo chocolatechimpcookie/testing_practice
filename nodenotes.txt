@@ -1,0 +1,7 @@
+fs is for file operations:
+
+Read files
+Create files
+Update files
+Delete files
+Rename files
