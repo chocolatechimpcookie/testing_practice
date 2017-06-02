@@ -5,3 +5,31 @@ Create files
 Update files
 Delete files
 Rename files
+
+
+req stands for request
+
+res stands for response
+
+
+
+
+fs.rename is really exact?/upload demo problems
+  It works fine in fileserver/demo.js
+  but
+
+        if new path is './'
+          Error: EXDEV: cross-device link not permitted, rename '/tmp/upload_294935d4739777d20c1d0f7761c5de42' -> './Scarlet Tanager b57-5-230_V.jpg'
+
+        or
+
+        var newpath = '' + files.filetoupload.name;
+
+          Error: EXDEV: cross-device link not permitted, rename '/tmp/upload_878d9187bc59fa922aa8d5a1435464bf' -> 'Untitled_0026_by_Mike_Sinko-1600.jpg'
+
+        var newpath = '/' + files.filetoupload.name;
+
+          Error: EACCES: permission denied, rename '/tmp/upload_fb50e4203246eab99f398f7c3284a50f' -> '/The_Sky_Is_The_Limit_by_Kaushik_Panchal-1600.jpg'
+
+
+    Why is the path exact here?
