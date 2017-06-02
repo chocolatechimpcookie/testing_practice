@@ -1,3 +1,5 @@
+Going through w3 schools tutoria;
+
 fs is for file operations:
 
 Read files
@@ -33,3 +35,6 @@ fs.rename is really exact?/upload demo problems
 
 
     Why is the path exact here?
+
+
+Maybe later: https://scotch.io/tutorials/use-expressjs-to-deliver-html-files
