@@ -38,3 +38,64 @@ fs.rename is really exact?/upload demo problems
 
 
 Maybe later: https://scotch.io/tutorials/use-expressjs-to-deliver-html-files
+
+Look over:
+  https://nodejs.org/api/process.html#process_process
+
+https://blog.logentries.com/2015/10/unleash-the-power-of-node-js-for-shell-scripting-part-1/
+  Running node directly
+
+      #!/usr/bin/env node
+      ^in the beginning of file name
+
+      chmod +x scriptname.js
+      ./scriptname.js
+
+      ^this doesn't work
+
+      Error:
+        /user/bin/env: bad interpreter: No such file or directory
+
+  You can still pipe stuff tho, just not execute scripts by themselves? weird
+
+  process.argv
+    https://nodejs.org/docs/latest/api/process.html#process_process_argv
+
+    https://github.com/indexzero/nconf
+    This is supposed to be useful for arguments and stuff too
+
+  ./commanderdemo.js help
+  does the same as
+  ./commanderdemo.js
+
+  *GOTTA USE
+
+  ./commanderdemo.js --help
+
+  also executing it works again
+
+
+  This is interesting:
+  http://ricostacruz.com/cheatsheets/jshint.html
+
+
+
+  "
+    Here is a list of the ones that I like and use regularly:
+
+    lodash
+    Request
+    Cheerio
+    csv
+    async
+    and even the very usefull shellJs
+  "
+
+
+  Is there a way to make async methods to sync ones? Or at least write em in
+  that fashion? Do I always have to nest everything that's async?
+
+          https://www.pincer.io/npm/libraries/ggo
+          http://know.cujojs.com/tutorials/async/simplifying-async-with-promises
+          https://carrot.is/coding/asynchrony-in-javascript.html
+          http://stackabuse.com/avoiding-callback-hell-in-node-js/
