@@ -12,3 +12,72 @@ controls such as the same-origin policy. "
 
 
 https://excess-xss.com/
+  https://excess-xss.com/persistent-xss.png
+
+
+
+  Types:
+    Persistent XSS, where the malicious string originates from the website's database.
+
+    Reflected XSS, where the malicious string originates from the victim's request.
+
+    DOM-based XSS, where the vulnerability is in the client-side code rather than
+    the server-side code.
+
+      In traditional XSS, the malicious JavaScript is executed when the page is
+      loaded, as part of the HTML sent by the server.
+
+      In DOM-based XSS, the malicious JavaScript is executed at some point after the
+      page has loaded, as a result of the page's legitimate JavaScript treating user input in an unsafe way.
+        So like an AJAX call.
+        Difference being that it doesn't matter how
+
+    **Kind of understand the difference
+
+
+  Secure handling:
+    Validation: Filter user input
+    Encoding: escapes user input
+
+    *What's the difference? What does escape mean?
+      Filter checks the input for the code
+      Encoding breaks up the input
+        For example turn < into &lt;
+
+    You can check his on either side of client or server.
+
+  **Based on (excess-xss.com); I don't understand how the user input can be
+   anything other than input value=""
+
+      I guess because there's no API and the backend/server side is more direct??
+      Also one can just press ctrl shift i
+
+
+
+  Prevention:
+    White listing, only allow certain inputs
+    Black listing, ban certain inputs
+
+    Black listing can get outdated qickly and there are a million ways to input
+     a script
+
+     You can reject bad input or sanitize it.
+
+    Enable CSP (content security policy): no untrusted (external) sources, no line resources, no eval()
+
+I guess I need an example of DOM based attack
+
+What kind of places are vulnerable to attack? What kind of inputs?
+  comments section
+
+
+https://google-gruyere.appspot.com/
+
+
+
+
+
+
+
+
+What makes a page vulnerable?

@@ -1,22 +1,65 @@
 https://marmelab.com/blog/2015/06/24/jest-in-practice.html
 
-https://stackshare.io/stackups/mocha-vs-jest-vs-jasmine
+
 
 -Specifically made for React in mind, close to ReactJS philosophy
 -Not for the browser, unit test focused
 -Based on JSDom, built on top of Jasmine (similar to the protractor I was using)
 -"Zero configuration", for react at least
 
--How about mocha?
-  -"Jest is best for components, mocha is best for business logic"
-    -"Business logic" So mocha  is for the backend?
-      -"Business logic or domain logic is that part of the program which encodes
-      the real-world business rules that determine how data can be created, displayed,
-       stored, and changed.
-    -"Business logic tends to run on both client and server. "
-  -Mocha runs on client and server
-  -Can run end to end
+
+  -On Au?
+    Only found one online.
+
+Alternatives:
+  -How about mocha?
+    -"Jest is best for components, mocha is best for business logic"
+      -"Business logic" So mocha  is for the backend?
+        -"Business logic or domain logic is that part of the program which encodes
+        the real-world business rules that determine how data can be created, displayed,
+         stored, and changed.
+      -"Business logic tends to run on both client and server. "
+    -Mocha runs on client and server
+    -Can run end to end
 
 
--Chimp
-  -You can use Cucumber, jasmine or mocha
+  -Chimp
+    -You can use Cucumber, jasmine or mocha
+
+    This link recommends Mocha, Chai, Sinon instead of jest:
+    https://medium.com/javascript-and-opinions/state-of-the-art-javascript-in-2016-ab67fc68eb0b
+      Says "auto-mocking isn’t nearly as nice as it sounds, and is very slow anyway"
+      makes an edit and takes back what he says
+
+    Protractor?
+      Just for end2end, tho it uses jasmine.
+
+  What about Jasmine? What does it do exactly? Is it just a piece?
+    -Doesn't need the browser
+
+  Comparisons:
+    https://stackshare.io/stackups/mocha-vs-jest-vs-jasmine
+      Mocha > Jasmine > Jest
+      Mocha and Jasmine are head to head.
+      Seems to be more documentation?
+      People don't like mock.
+
+      JEST IS A LAYER ON TOP OF JASMINE
+
+      Mocha vs jasmine:
+      https://en.wikipedia.org/wiki/Jasmine_(JavaScript_testing_framework)#Comparison_between_Jasmine_and_Mocha.5B11.5D
+Tutorial:
+  https://egghead.io/lessons/javascript-test-javascript-with-jest
+
+  Left off:
+
+  *"Add babel integration" doesn't work
+  *"Coverage also doesn't show up the way this guy explains it.
+
+  This tutorial is dumb and bad
+
+  If you set test names to name.test.js or name.spec.js or put them all in a directory
+   called __test__, you don't need set it up further.
+
+   by default, jest has some window functionality without running i a browser
+   but this takes ram, you can configure jest not to; through test environment
