@@ -1,42 +1,44 @@
+import {EventAggregator} from 'aurelia-event-aggregator';
+
+jest.mock('aurelia-event-aggregator', () =>
+({
+    EventAggregator:
+    {
+      publish: jest.fn()
+    }
+}));
+
+// jest.fn keeps track of calls to publish function
+// Anytime you want to check if a function was called or called with specific
+//  parameters that function needs to be a mock.
+
+// what is this syntax?
 import {App} from '../../src/app';
 
-class RouterStub {
-  configure(handler) {
-    handler(this);
-  }
+describe('App Component', () =>
+{
+  let app;
 
-  map(routes) {
-    this.routes = routes;
-  }
-}
-
-describe('the App module', () => {
-  var sut;
-  var mockedRouter;
-
-  beforeEach(() => {
-    mockedRouter = new RouterStub();
-    sut = new App();
-    sut.configureRouter(mockedRouter, mockedRouter);
+  beforeEach( () =>
+  {
+    app = new App(EventAggregator);
   });
 
-  it('contains a router property', () => {
-    expect(sut.router).toBeDefined();
+  //creates a new component for each event
+
+  test('constructor is defined', () =>
+  {
+    expect(app.constructor).toBeDefined();
   });
 
-  it('configures the router title', () => {
-    expect(sut.router.title).toEqual('Aurelia');
-  });
+  test('fire event', () =>
+  {
+    app.fireEvent();
 
-  it('should have a welcome route', () => {
-    expect(sut.router.routes).toContain({ route: ['', 'welcome'], name: 'welcome',  moduleId: './welcome', nav: true, title: 'Welcome' });
-  });
+    expect(EventAggregator.publish).toHaveBeenCalledTimes(1);
+  })
 
-  it('should have a users route', () => {
-    expect(sut.router.routes).toContain({ route: 'users', name: 'users', moduleId: './users', nav: true, title: 'Github Users' });
-  });
 
-  it('should have a child router route', () => {
-    expect(sut.router.routes).toContain({ route: 'child-router', name: 'child-router', moduleId: './child-router', nav: true, title: 'Child Router' });
-  });
+
+
 });

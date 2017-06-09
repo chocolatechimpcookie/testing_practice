@@ -1,0 +1,22 @@
+https://marmelab.com/blog/2015/06/24/jest-in-practice.html
+
+https://stackshare.io/stackups/mocha-vs-jest-vs-jasmine
+
+-Specifically made for React in mind, close to ReactJS philosophy
+-Not for the browser, unit test focused
+-Based on JSDom, built on top of Jasmine (similar to the protractor I was using)
+-"Zero configuration", for react at least
+
+-How about mocha?
+  -"Jest is best for components, mocha is best for business logic"
+    -"Business logic" So mocha  is for the backend?
+      -"Business logic or domain logic is that part of the program which encodes
+      the real-world business rules that determine how data can be created, displayed,
+       stored, and changed.
+    -"Business logic tends to run on both client and server. "
+  -Mocha runs on client and server
+  -Can run end to end
+
+
+-Chimp
+  -You can use Cucumber, jasmine or mocha

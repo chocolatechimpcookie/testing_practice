@@ -1,12 +1,20 @@
-export class App {
-  configureRouter(config, router) {
-    config.title = 'Aurelia';
-    config.map([
-      { route: ['', 'welcome'], name: 'welcome',      moduleId: './welcome',      nav: true, title: 'Welcome' },
-      { route: 'users',         name: 'users',        moduleId: './users',        nav: true, title: 'Github Users' },
-      { route: 'child-router',  name: 'child-router', moduleId: './child-router', nav: true, title: 'Child Router' }
-    ]);
+import {inject} from 'aurelia-framework';
+import {EventAggregator} from 'aurelia-event-aggregator';
 
-    this.router = router;
+@inject(EventAggregator)
+
+export class App
+{
+  constructor(eventAggregator)
+  {
+    this.heading = 'Testing Aurelia with Jest';
+    //will be binded to html and fireEvent
+    //demonstrates how to use mocks
+    this.ea = eventAggregator;
+  }
+
+  fireEvent()
+  {
+    this.ea.publish('event-fired');
   }
 }

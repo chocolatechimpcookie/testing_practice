@@ -1,23 +1,39 @@
 {
-  "env": {
-    "webpack": {
-      "plugins": [
+  "env":
+  {
+    "test":
+    {
+      "presets": ["env"],
+      "plugins":
+      [
+        "transform-class-properties",
+        "transform-decorators"
+      ]
+    },
+    "webpack":
+    {
+      "plugins":
+      [
         "transform-decorators-legacy",
         "transform-class-properties"
       ],
-      "presets": [
+      "presets":
+      [
         [
           "env",
           {
-            "targets": {
-              "browsers": [
+            "targets":
+            {
+              "browsers":
+              [
                 "last 2 versions",
                 "not ie <= 11"
               ]
             },
             "loose": true,
             "modules": false,
-            "whitelist": [
+            "whitelist":
+            [
               "transform-es2015-literals",
               "transform-es2015-template-literals"
             ],
@@ -26,24 +42,30 @@
         ]
       ]
     },
-    "e2e": {
-      "plugins": [
+    "e2e":
+    {
+      "plugins":
+      [
         "transform-decorators-legacy",
         "transform-class-properties"
       ],
-      "presets": [
+      "presets":
+      [
         [
           "env",
           {
-            "targets": {
-              "browsers": [
+            "targets":
+            {
+              "browsers":
+              [
                 "last 2 versions",
                 "not ie <= 11"
               ]
             },
             "loose": true,
             "modules": "commonjs",
-            "whitelist": [
+            "whitelist":
+            [
               "transform-es2015-literals",
               "transform-es2015-template-literals"
             ],
@@ -52,12 +74,15 @@
         ]
       ]
     },
-    "node": {
-      "presets": [
+    "node":
+    {
+      "presets":
+      [
         [
           "env",
           {
-            "targets": {
+            "targets":
+            {
               "node": 4
             },
             "loose": true,
