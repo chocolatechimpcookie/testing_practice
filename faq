@@ -1,4 +1,14 @@
 What does......
+    Can I change class variables directly or not? es6 syntax?
+    regular syntax? tut3 jasmine seems like I can. But doing this
+    caused errors in page object syntax. what about this syntax?
+    I need a more general understanding of how es6 classes work,
+    it seems you don't even need to declare variables.
+
+    -If react is one way, how is this useful? 
+
+    -How do I write directives?
+
     =>
         -Not supported in browser BUT are supported in node
         -Like a function

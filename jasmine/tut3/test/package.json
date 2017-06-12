@@ -1,0 +1,8 @@
+{
+  "name": "tester",
+  "dependencies":
+  {
+    "aurelia-testing": "^1.0.0-beta.3.0.1",
+    "aurelia-bootstrapper": "^2.1.1"
+  }
+}

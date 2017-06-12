@@ -68,7 +68,7 @@ https://excess-xss.com/
 I guess I need an example of DOM based attack
 
 What kind of places are vulnerable to attack? What kind of inputs?
-  comments section
+  comments sections for example
 
 
 https://google-gruyere.appspot.com/

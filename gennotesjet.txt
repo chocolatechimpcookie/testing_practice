@@ -21,6 +21,7 @@ Alternatives:
       -"Business logic tends to run on both client and server. "
     -Mocha runs on client and server
     -Can run end to end
+    -You can use a combination like Mocha JS, Chai JS and Sinon JS
 
 
   -Chimp
