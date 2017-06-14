@@ -1,1 +1,21 @@
 http://aurelia.io/hub.html#/doc/article/aurelia/framework/latest/contact-manager-tutorial/
+
+
+au run --watch
+
+
+I don't understand dependency injection here. For example in contact-list.
+ We're already importing.
+I guess inject is passing the api variable?
+
+?? contact-list.js ==
+
+
+?? LoadingIndicator, the decorators
+
+
+**Followed it step by step, getting an error:
+  alicina:~/aur/aur_contactmanager$ au run --watch
+  SyntaxError: Unexpected token { in JSON at position 3870
+    at JSON.parse (<anonymous>)
+    at fs.readFile.then.pack (/public_practice/aur/aur_contactmanager/node_modules/aurelia-cli/lib/project.js:14:50)

@@ -152,8 +152,7 @@
             "name": "nprogress",
             "path": "../node_modules/nprogress",
             "main": "nprogress",
-            "resources":
-            [
+            "resources": [
               "nprogress.css"
             ]
           }
