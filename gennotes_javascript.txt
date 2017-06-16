@@ -1,0 +1,12 @@
+Functions
+  -Define functions with var
+    var myFunction = functionname(text) {}
+
+
+
+
+
+
+
+Faq
+  -Using functions and scope?
