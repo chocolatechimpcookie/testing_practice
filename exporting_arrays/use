@@ -1,0 +1,3 @@
+babel ./thefiles --out-dir compiled
+
+^to compile

@@ -1,7 +1,10 @@
+Pluralsight
+
+
 Functions
   -Define functions with var
     var myFunction = functionname(text) {}
-
+    so it isn't pushed to global scope
 
 
 
@@ -9,4 +12,4 @@ Functions
 
 
 Faq
-  -Using functions and scope?
+  -namespaces?
